@@ -71,9 +71,11 @@ function game(){
         console.log(playRound(playerSelection, computerSelection));
         if (winner === "player") {
             playerScore++;
-        } else {
+        } else if (winner === "computer") {
             computerScore++;
-        };
+        } else {
+            //
+        }
         console.log(`Score: ${playerScore} - ${computerScore}`);
     }
 
