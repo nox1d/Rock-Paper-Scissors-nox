@@ -56,6 +56,10 @@ function playRound(playerSelection, computerSelection){
     return roundResult;
 }
 
+
+// loop the playRound() 5 times
+// keep track of the scores
+// declare the final winner at the end of the game
 function game(){
     for (let i = 0; i < 5; i++) {
         const playerInput = prompt("Choose between Rock, Paper, or Scissors:","");
