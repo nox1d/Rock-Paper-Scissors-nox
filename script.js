@@ -79,6 +79,14 @@ function game(){
         console.log(`Score: ${playerScore} - ${computerScore}`);
     }
 
+    if (playerScore > computerScore) {
+        console.log("YOU ARE THE WINNER!!!");
+    } else if (playerScore < computerScore) {
+        console.log("YOU LOST! COMPUTER IS THE WINNER!!!");
+    } else {
+        console.log("IT'S A DRAW");
+    };
+
 }
 
 game();
