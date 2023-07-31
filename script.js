@@ -25,31 +25,31 @@ function getComputerChoice(){
 
 function playRound(playerSelection, computerSelection){
     let roundResult;
-    let playerScore = 0;
-    let computerScore = 0;
     
     if (!(playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissors")) {
         roundResult = `${playerSelection} is invalid`;
+        winner = "none";
     } else if (playerSelection === "rock" && computerSelection === "scissors"){
         roundResult = `You Win! Rock beats Scissors`;   
-        playerScore += 1; 
+        winner = "player";
     } else if (playerSelection === "paper" && computerSelection === "rock"){
         roundResult = `You Win! Paper beats Rock`;
-        playerScore += 1; 
+        winner = "player";
     } else if (playerSelection === "scissors" && computerSelection === "paper"){
         roundResult = `You Win! Scissors beat Paper`;
-        playerScore += 1; 
+        winner = "player";
     } else if (playerSelection === "scissors" && computerSelection === "rock"){
         roundResult = `You Lose! Rock beats Scissors`;
-        computerScore += 1; 
+        winner = "computer";
     } else if (playerSelection === "rock" && computerSelection === "paper"){
         roundResult = `You Lose! Paper beats Rock`;
-        computerScore += 1;
+        winner = "computer";
     } else if (playerSelection === "paper" && computerSelection === "scissors"){
         roundResult = `You Lose! Scissors beat Paper`;
-        computerScore += 1;
+        winner = "computer";
     } else {
         roundResult = `Both of you chose ${playerSelection}, It's a draw!`;
+        winner = "none";
     };
     
     
@@ -57,15 +57,24 @@ function playRound(playerSelection, computerSelection){
 }
 
 
+let winner;
 // loop the playRound() 5 times
 // keep track of the scores
 // declare the final winner at the end of the game
 function game(){
+    let playerScore = 0;
+    let computerScore = 0;
     for (let i = 0; i < 5; i++) {
         const playerInput = prompt("Choose between Rock, Paper, or Scissors:","");
         const playerSelection = playerInput.toLowerCase();
         const computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
+        if (winner === "player") {
+            playerScore++;
+        } else {
+            computerScore++;
+        };
+        console.log(`Score: ${playerScore} - ${computerScore}`);
     }
 
 }
