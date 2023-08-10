@@ -52,7 +52,6 @@ function playRound(playerSelection, computerSelection){
         winner = "none";
     };
     
-    
     return roundResult;
 }
 
@@ -61,9 +60,24 @@ const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
 
-rock.addEventListener('click', playRound);
-paper.addEventListener('click', playRound);
-scissors.addEventListener('click', playRound);
+let playerSelection;
+let computerSelection;
+
+rock.addEventListener('click', () => {
+    playerSelection = 'rock';
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+});
+paper.addEventListener('click', () => {
+    playerSelection = 'paper';
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+});
+scissors.addEventListener('click', () => {
+    playerSelection = 'scissors';
+    computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+});
 
 
 let winner;
