@@ -57,6 +57,15 @@ function playRound(playerSelection, computerSelection){
 }
 
 
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
+
+rock.addEventListener('click', playRound);
+paper.addEventListener('click', playRound);
+scissors.addEventListener('click', playRound);
+
+
 let winner;
 // loop the playRound() 5 times
 // keep track of the scores
