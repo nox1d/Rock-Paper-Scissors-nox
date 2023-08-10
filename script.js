@@ -64,28 +64,32 @@ let winner;
 function game(){
     let playerScore = 0;
     let computerScore = 0;
-    for (let i = 0; i < 5; i++) {
-        const playerInput = prompt("Choose between Rock, Paper, or Scissors:","");
-        const playerSelection = playerInput.toLowerCase();
-        const computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection));
-        if (winner === "player") {
-            playerScore++;
-        } else if (winner === "computer") {
-            computerScore++;
-        } else {
-            //
-        }
-        console.log(`Score: ${playerScore} - ${computerScore}`);
-    }
+    // ------------Temporary Remove--------------------
+    
+    // for (let i = 0; i < 5; i++) {
+    //     const playerInput = prompt("Choose between Rock, Paper, or Scissors:","");
+    //     const playerSelection = playerInput.toLowerCase();
+    //     const computerSelection = getComputerChoice();
+    //     console.log(playRound(playerSelection, computerSelection));
+    //     if (winner === "player") {
+    //             playerScore++;
+    //     } else if (winner === "computer") {
+    //                 computerScore++;
+    //     } else {
+    //         //
+    //     }
+    //     console.log(`Score: ${playerScore} - ${computerScore}`);
+    // }
+                
+    // if (playerScore > computerScore) {
+    //     console.log("YOU ARE THE WINNER!!!");
+    // } else if (playerScore < computerScore) {
+    //     console.log("YOU LOST! COMPUTER IS THE WINNER!!!");
+    // } else {
+    //     console.log("IT'S A DRAW");
+    // };
 
-    if (playerScore > computerScore) {
-        console.log("YOU ARE THE WINNER!!!");
-    } else if (playerScore < computerScore) {
-        console.log("YOU LOST! COMPUTER IS THE WINNER!!!");
-    } else {
-        console.log("IT'S A DRAW");
-    };
+    // --------------------------------
 
 }
 
