@@ -79,41 +79,10 @@ scissors.addEventListener('click', () => {
     console.log(playRound(playerSelection, computerSelection));
 });
 
+const playerScore = document.querySelector('#playerScore');
+const computerScore = document.querySelector('#computerSelector');
+let playerScoreValue = 0;
+let computerScoreValue = 0;
+
 
 let winner;
-// loop the playRound() 5 times
-// keep track of the scores
-// declare the final winner at the end of the game
-function game(){
-    let playerScore = 0;
-    let computerScore = 0;
-    // ------------Temporary Remove--------------------
-    
-    // for (let i = 0; i < 5; i++) {
-    //     const playerInput = prompt("Choose between Rock, Paper, or Scissors:","");
-    //     const playerSelection = playerInput.toLowerCase();
-    //     const computerSelection = getComputerChoice();
-    //     console.log(playRound(playerSelection, computerSelection));
-    //     if (winner === "player") {
-    //             playerScore++;
-    //     } else if (winner === "computer") {
-    //                 computerScore++;
-    //     } else {
-    //         //
-    //     }
-    //     console.log(`Score: ${playerScore} - ${computerScore}`);
-    // }
-                
-    // if (playerScore > computerScore) {
-    //     console.log("YOU ARE THE WINNER!!!");
-    // } else if (playerScore < computerScore) {
-    //     console.log("YOU LOST! COMPUTER IS THE WINNER!!!");
-    // } else {
-    //     console.log("IT'S A DRAW");
-    // };
-
-    // --------------------------------
-
-}
-
-game();
