@@ -51,6 +51,7 @@ function playRound(playerSelection, computerSelection){
         roundResult.textContent = `Both of you chose ${playerSelection}, It's a draw!`;
         winner = "none";
     };
+    addScore();
     
     return roundResult;
 }
@@ -79,10 +80,23 @@ scissors.addEventListener('click', () => {
     console.log(playRound(playerSelection, computerSelection));
 });
 
-const playerScore = document.querySelector('#playerScore');
-const computerScore = document.querySelector('#computerSelector');
+let winner;
+const playerScore = document.querySelector('#playerScore #value');
+const computerScore = document.querySelector('#computerScore #value');
 let playerScoreValue = 0;
 let computerScoreValue = 0;
 
+function addScore() {
+    if (winner === 'player') {
+        playerScoreValue++;
+        playerScore.textContent = playerScoreValue.toString();
+    } else if (winner === 'computer') {
+        computerScoreValue++;
+        computerScore.textContent = computerScoreValue.toString();
+    } else {
+        //
+    };
+    
 
-let winner;
+    console.log(playerScore, computerScore);
+}
