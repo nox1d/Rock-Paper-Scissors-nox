@@ -52,6 +52,7 @@ function playRound(playerSelection, computerSelection){
         winner = "none";
     };
     addScore();
+    displayWinner();
     
     return roundResult;
 }
@@ -99,4 +100,12 @@ function addScore() {
     
 
     console.log(playerScore, computerScore);
+}
+
+function displayWinner() {
+    if (playerScoreValue === 5) {
+        roundResult.textContent = "YOU WIN!!!";
+    } else if (computerScoreValue === 5) {
+        roundResult.textContent = "COMPUTER WINS!!!"
+    } else return;
 }
