@@ -24,31 +24,31 @@ function getComputerChoice(){
 // scissors beat paper, paper beats rock, rock beats scissors
 
 function playRound(playerSelection, computerSelection){
-    let roundResult;
+    let roundResult = document.querySelector('#roundResult');
     
     if (!(playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissors")) {
-        roundResult = `${playerSelection} is invalid`;
+        roundResult.textContent = `${playerSelection} is invalid`;
         winner = "none";
     } else if (playerSelection === "rock" && computerSelection === "scissors"){
-        roundResult = `You Win! Rock beats Scissors`;   
+        roundResult.textContent = `You Win! Rock beats Scissors`;   
         winner = "player";
     } else if (playerSelection === "paper" && computerSelection === "rock"){
-        roundResult = `You Win! Paper beats Rock`;
+        roundResult.textContent = `You Win! Paper beats Rock`;
         winner = "player";
     } else if (playerSelection === "scissors" && computerSelection === "paper"){
-        roundResult = `You Win! Scissors beat Paper`;
+        roundResult.textContent = `You Win! Scissors beat Paper`;
         winner = "player";
     } else if (playerSelection === "scissors" && computerSelection === "rock"){
-        roundResult = `You Lose! Rock beats Scissors`;
+        roundResult.textContent = `You Lose! Rock beats Scissors`;
         winner = "computer";
     } else if (playerSelection === "rock" && computerSelection === "paper"){
-        roundResult = `You Lose! Paper beats Rock`;
+        roundResult.textContent = `You Lose! Paper beats Rock`;
         winner = "computer";
     } else if (playerSelection === "paper" && computerSelection === "scissors"){
-        roundResult = `You Lose! Scissors beat Paper`;
+        roundResult.textContent = `You Lose! Scissors beat Paper`;
         winner = "computer";
     } else {
-        roundResult = `Both of you chose ${playerSelection}, It's a draw!`;
+        roundResult.textContent = `Both of you chose ${playerSelection}, It's a draw!`;
         winner = "none";
     };
     
