@@ -53,6 +53,10 @@ function displayWinner() {
     } else return;
 }
 
+// hide reset button
+const resetButton = document.querySelector('#reset');
+resetButton.style.display = 'none';
+
 // check playerSelection
 // check computerSelection
 // scissors beat paper, paper beats rock, rock beats scissors
@@ -61,8 +65,14 @@ function playRound(playerSelection, computerSelection){
     let roundResult = document.querySelector('#roundResult');
     
     if (playerScoreValue === 5 || computerScoreValue === 5) {
-        // 
-
+        resetButton.style.display = 'initial';
+        resetButton.addEventListener('click', () => {
+            playerScoreValue = 0;
+            computerScoreValue = 0;
+            playerScore.textContent = playerScoreValue;
+            computerScore.textContent = computerScoreValue;
+            roundResult.textContent = '';
+        });
     } else {
         if (!(playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissors")) {
             roundResult.textContent = `${playerSelection} is invalid`;
