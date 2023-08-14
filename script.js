@@ -19,6 +19,40 @@ function getComputerChoice(){
     return computerChoice;
 }
 
+// check winner
+// add score to the winner
+let winner;
+const playerScore = document.querySelector('#playerScore #value');
+const computerScore = document.querySelector('#computerScore #value');
+let playerScoreValue = 0;
+let computerScoreValue = 0;
+
+function addScore() {
+    if (winner === 'player') {
+        playerScoreValue++;
+        playerScore.textContent = playerScoreValue.toString();
+    } else if (winner === 'computer') {
+        computerScoreValue++;
+        computerScore.textContent = computerScoreValue.toString();
+    } else {
+        //
+    };
+    
+
+    console.log(playerScore, computerScore);
+}
+
+// check which player has score 5
+// display the winner
+
+function displayWinner() {
+    if (playerScoreValue === 5) {
+        roundResult.textContent = "YOU WIN!!!";
+    } else if (computerScoreValue === 5) {
+        roundResult.textContent = "COMPUTER WINS!!!"
+    } else return;
+}
+
 // check playerSelection
 // check computerSelection
 // scissors beat paper, paper beats rock, rock beats scissors
@@ -63,6 +97,7 @@ function playRound(playerSelection, computerSelection){
 
 
 
+
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
 const scissors = document.querySelector('#scissors');
@@ -86,31 +121,3 @@ scissors.addEventListener('click', () => {
     console.log(playRound(playerSelection, computerSelection));
 });
 
-let winner;
-const playerScore = document.querySelector('#playerScore #value');
-const computerScore = document.querySelector('#computerScore #value');
-let playerScoreValue = 0;
-let computerScoreValue = 0;
-
-function addScore() {
-    if (winner === 'player') {
-        playerScoreValue++;
-        playerScore.textContent = playerScoreValue.toString();
-    } else if (winner === 'computer') {
-        computerScoreValue++;
-        computerScore.textContent = computerScoreValue.toString();
-    } else {
-        //
-    };
-    
-
-    console.log(playerScore, computerScore);
-}
-
-function displayWinner() {
-    if (playerScoreValue === 5) {
-        roundResult.textContent = "YOU WIN!!!";
-    } else if (computerScoreValue === 5) {
-        roundResult.textContent = "COMPUTER WINS!!!"
-    } else return;
-}
