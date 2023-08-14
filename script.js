@@ -61,7 +61,7 @@ function playRound(playerSelection, computerSelection){
     let roundResult = document.querySelector('#roundResult');
     
     if (playerScoreValue === 5 || computerScoreValue === 5) {
-        displayWinner();
+        // 
 
     } else {
         if (!(playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissors")) {
@@ -90,6 +90,7 @@ function playRound(playerSelection, computerSelection){
             winner = "none";
         };
         addScore();
+        displayWinner();
     }
     
     return roundResult;
