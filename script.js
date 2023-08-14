@@ -26,36 +26,41 @@ function getComputerChoice(){
 function playRound(playerSelection, computerSelection){
     let roundResult = document.querySelector('#roundResult');
     
-    if (!(playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissors")) {
-        roundResult.textContent = `${playerSelection} is invalid`;
-        winner = "none";
-    } else if (playerSelection === "rock" && computerSelection === "scissors"){
-        roundResult.textContent = `You Win! Rock beats Scissors`;   
-        winner = "player";
-    } else if (playerSelection === "paper" && computerSelection === "rock"){
-        roundResult.textContent = `You Win! Paper beats Rock`;
-        winner = "player";
-    } else if (playerSelection === "scissors" && computerSelection === "paper"){
-        roundResult.textContent = `You Win! Scissors beat Paper`;
-        winner = "player";
-    } else if (playerSelection === "scissors" && computerSelection === "rock"){
-        roundResult.textContent = `You Lose! Rock beats Scissors`;
-        winner = "computer";
-    } else if (playerSelection === "rock" && computerSelection === "paper"){
-        roundResult.textContent = `You Lose! Paper beats Rock`;
-        winner = "computer";
-    } else if (playerSelection === "paper" && computerSelection === "scissors"){
-        roundResult.textContent = `You Lose! Scissors beat Paper`;
-        winner = "computer";
+    if (playerScoreValue === 5 || computerScoreValue === 5) {
+        displayWinner();
+
     } else {
-        roundResult.textContent = `Both of you chose ${playerSelection}, It's a draw!`;
-        winner = "none";
-    };
-    addScore();
-    displayWinner();
+        if (!(playerSelection === "rock" || playerSelection === "paper" || playerSelection === "scissors")) {
+            roundResult.textContent = `${playerSelection} is invalid`;
+            winner = "none";
+        } else if (playerSelection === "rock" && computerSelection === "scissors"){
+            roundResult.textContent = `You Win! Rock beats Scissors`;   
+            winner = "player";
+        } else if (playerSelection === "paper" && computerSelection === "rock"){
+            roundResult.textContent = `You Win! Paper beats Rock`;
+            winner = "player";
+        } else if (playerSelection === "scissors" && computerSelection === "paper"){
+            roundResult.textContent = `You Win! Scissors beat Paper`;
+            winner = "player";
+        } else if (playerSelection === "scissors" && computerSelection === "rock"){
+            roundResult.textContent = `You Lose! Rock beats Scissors`;
+            winner = "computer";
+        } else if (playerSelection === "rock" && computerSelection === "paper"){
+            roundResult.textContent = `You Lose! Paper beats Rock`;
+            winner = "computer";
+        } else if (playerSelection === "paper" && computerSelection === "scissors"){
+            roundResult.textContent = `You Lose! Scissors beat Paper`;
+            winner = "computer";
+        } else {
+            roundResult.textContent = `Both of you chose ${playerSelection}, It's a draw!`;
+            winner = "none";
+        };
+        addScore();
+    }
     
     return roundResult;
 }
+
 
 
 const rock = document.querySelector('#rock');
