@@ -12,3 +12,9 @@
     display: flex;
     flex-direction: column;
 }
+
+.block {
+    background-color: lightgray;
+    border: 2px  solid;
+    border-radius: 26px;
+}
