@@ -47,7 +47,7 @@
     width: 500px;
     background-color: lightseagreen;
     border-radius: 16px;
-    border: 2px solid;
+    outline: 2px solid;
     margin: 10px;
 
 }
@@ -64,14 +64,14 @@
     height: 50px;
     width: 240px;
     background-color: lightcyan;
-    border: 2px solid;
+    outline: 2px solid;
 }
 
 .value {
     height: 120px;
     width: 240px;
     background-color: lightseagreen;
-    border: 2px solid;
+    outline: 2px solid;
     border-radius: 0 0 26px 26px;
 }
 
@@ -81,7 +81,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-content: flex-start;
+    align-items: flex-start;
 }
 
 p {
