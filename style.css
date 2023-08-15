@@ -5,3 +5,10 @@
     background-color: lightgray;
     border: 2px solid;
 }
+
+.container#info {
+    height: 400px;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+}
