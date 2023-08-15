@@ -59,3 +59,18 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+
+.score {
+    height: 50px;
+    width: 240px;
+    background-color: lightcyan;
+    border: 2px solid;
+}
+
+.value {
+    height: 120px;
+    width: 240px;
+    background-color: lightseagreen;
+    border: 2px solid;
+    border-radius: 0 0 26px 26px;
+}
