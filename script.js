@@ -22,8 +22,8 @@ function getComputerChoice(){
 // check winner
 // add score to the winner
 let winner;
-const playerScore = document.querySelector('#playerScore #value');
-const computerScore = document.querySelector('#computerScore #value');
+const playerScore = document.querySelector('#playerScoreValue');
+const computerScore = document.querySelector('#computerScoreValue');
 let playerScoreValue = 0;
 let computerScoreValue = 0;
 
