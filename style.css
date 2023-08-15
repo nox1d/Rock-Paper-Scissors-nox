@@ -15,7 +15,16 @@
 }
 
 .block {
+    width: 540px;
     background-color: lightgray;
     border: 2px  solid;
     border-radius: 26px;
+}
+
+#result {
+    height: 90px;
+}
+
+#scores {
+    height: 300px;
 }
