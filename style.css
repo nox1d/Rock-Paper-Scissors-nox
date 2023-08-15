@@ -20,6 +20,7 @@
     border: 2px  solid;
     border-radius: 26px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
