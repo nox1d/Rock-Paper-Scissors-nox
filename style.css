@@ -74,3 +74,12 @@
     border: 2px solid;
     border-radius: 0 0 26px 26px;
 }
+
+.innerBlock2 {
+    height: 170px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
