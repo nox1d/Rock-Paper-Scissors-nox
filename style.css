@@ -19,6 +19,9 @@
     background-color: lightgray;
     border: 2px  solid;
     border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #result {
@@ -27,4 +30,12 @@
 
 #scores {
     height: 300px;
+}
+
+#roundResult {
+    height: 50px;
+    width: 500px;
+    background-color: lightseagreen;
+    border-radius: 16px;
+    margin: 10px;
 }
