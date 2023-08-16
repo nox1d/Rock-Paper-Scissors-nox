@@ -15,6 +15,19 @@ html, body {
     outline: 2px solid;
 }
 
+#buttons button {
+    width: 220px;
+    height: 210px;
+    background-color: lightseagreen;
+    border-radius: 16px;
+    outline: 2px solid;
+    border: none;
+}
+
+#buttons button:hover{
+    background-color: beige;
+}
+
 .container#info {
     height: 440px;
     width: 540px;
