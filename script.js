@@ -94,7 +94,7 @@ function playRound(playerSelection, computerSelection){
             roundResult.textContent = `You Lose! Scissors beat Paper`;
             winner = "computer";
         } else {
-            roundResult.textContent = `Both of you chose ${playerSelection}, It's a draw!`;
+            roundResult.textContent = `Both of you chose ${playerSelection}, Draw!`;
             winner = "none";
         };
         addScore();
