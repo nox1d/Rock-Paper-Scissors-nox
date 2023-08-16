@@ -36,11 +36,11 @@ html, body {
 }
 
 .container#info {
-    height: 640px;
-    width: 540px;
+    height: 750px;
+    width: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
