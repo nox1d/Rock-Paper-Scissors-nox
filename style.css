@@ -8,6 +8,11 @@ html, body {
     padding: 20px;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 .container#buttons {
     width: 750px;
     height: 250px;
@@ -128,9 +133,4 @@ button#reset:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-p {
-    margin: 0;
-    padding: 0;
 }
