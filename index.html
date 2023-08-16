@@ -6,12 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container" id="buttons">
-        <button id="rock">rock</button>
-        <button id="paper">paper</button>
-        <button id="scissors">scissors</button>
+        <button id="rock">🪨</button>
+        <button id="paper">📄</button>
+        <button id="scissors">✂️</button>
     </div>
 
     <div class="container" id="info">
@@ -38,4 +39,7 @@
         </div>
     </div>
 </body>
+<script>
+    twemoji.parse(document.body);
+</script>
 </html>
