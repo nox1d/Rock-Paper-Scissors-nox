@@ -59,7 +59,7 @@ button#reset {
     height: 50px;
     width: 500px;
     background-color: lightseagreen;
-    border-radius: 16px;
+    border-radius: 16px 16px 0 0;
     outline: 2px solid;
     margin: 10px;
 
