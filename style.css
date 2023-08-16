@@ -1,9 +1,9 @@
 .container#buttons {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
+    width: 750px;
+    height: 250px;
+    border-radius: 26px;
     background-color: lightgray;
-    border: 2px solid;
+    outline: 2px solid;
 }
 
 .container#info {
@@ -17,7 +17,7 @@
 .block {
     width: 540px;
     background-color: lightgray;
-    border: 2px  solid;
+    outline: 2px  solid;
     border-radius: 26px;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     width: 500px;
     background-color: lightseagreen;
     border-radius: 16px;
-    border: 2px solid;
+    outline: 2px solid;
     margin: 10px;
 }
 
