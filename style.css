@@ -26,6 +26,7 @@ html, body {
     border-radius: 16px;
     outline: 2px solid;
     border: none;
+    margin: 20px;
 }
 
 #buttons button:hover{
