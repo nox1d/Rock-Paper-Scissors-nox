@@ -28,6 +28,7 @@ html, body {
     outline: 2px solid;
     border: none;
     margin: 20px;
+    flex-shrink: 0;
 }
 
 #buttons button:hover{
