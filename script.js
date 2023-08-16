@@ -53,9 +53,8 @@ function displayWinner() {
     } else return;
 }
 
-// hide reset button
+// reset button
 const resetButton = document.querySelector('#reset');
-resetButton.style.display = 'none';
 
 // check playerSelection
 // check computerSelection
@@ -65,7 +64,6 @@ function playRound(playerSelection, computerSelection){
     let roundResult = document.querySelector('#roundResult');
     
     if (playerScoreValue === 5 || computerScoreValue === 5) {
-        resetButton.style.display = 'initial';
         resetButton.addEventListener('click', () => {
             playerScoreValue = 0;
             computerScoreValue = 0;
