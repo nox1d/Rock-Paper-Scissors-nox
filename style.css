@@ -41,6 +41,10 @@ p {
     flex-shrink: 0;
 }
 
+button#paper {
+    margin: 20px 0;
+}
+
 #buttons button:hover{
     background-color: beige;
     transition: 0.25s;
