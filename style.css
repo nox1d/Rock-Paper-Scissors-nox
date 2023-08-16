@@ -62,9 +62,6 @@ html, body {
     height: 300px;
 }
 
-button#reset {
-    border: none;
-}
 
 #roundResult, button#reset {
     height: 50px;
@@ -73,6 +70,15 @@ button#reset {
     border-radius: 16px;
     outline: 2px solid;
     margin: 10px;
+}
+
+button#reset {
+    border: none;
+}
+
+button#reset:hover {
+    background-color: beige;
+    transition: 0.25s;
 }
 
 #scoreTitle {
