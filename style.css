@@ -100,7 +100,7 @@ button#scissors {
 #roundResult, button#reset {
     height: 50px;
     width: 500px;
-    background-color: lightseagreen;
+    background-color: #BBDDD9;
     border-radius: 16px;
     outline: 2px solid;
     margin: 10px;
