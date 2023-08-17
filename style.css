@@ -27,7 +27,7 @@ p.value {
     width: 750px;
     height: 250px;
     border-radius: 26px;
-    background-color: lightgray;
+    background-color: #C2C5AA;
     outline: 2px solid;
     display: flex;
     justify-content: space-evenly;
@@ -47,15 +47,15 @@ p.value {
 
 button#paper {
     margin: 20px 0;
-    background-color: #eff7f6;
+    background-color: #B6AD90;
 }
 
 button#rock {
-    background-color: #b2f7ef;
+    background-color: #A68A64;
 }
 
 button#scissors {
-    background-color: #f7d6e0;
+    background-color: #A4AC86;
 }
 
 #buttons button:hover{
@@ -74,7 +74,7 @@ button#scissors {
 
 .block {
     width: 540px;
-    background-color: lightgray;
+    background-color: #C2C5AA;
     outline: 2px  solid;
     border-radius: 26px;
     display: flex;
