@@ -147,6 +147,7 @@ button#reset:hover {
     width: 240px;
     outline: 2px solid black;
     border-radius: 0 0 26px 26px;
+    font-size: 56px;
 }
 
 .value#playerScoreValue {
