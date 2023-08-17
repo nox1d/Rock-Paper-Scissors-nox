@@ -145,16 +145,18 @@ button#reset:hover {
 .value {
     height: 120px;
     width: 240px;
-    outline: 2px solid;
+    outline: 2px solid black;
     border-radius: 0 0 26px 26px;
 }
 
 .value#playerScoreValue {
     background-color: #656D4A;
+    color: #D3D6C2;
 }
 
 .value#computerScoreValue {
     background-color: #936639;
+    color: #D3D6C2;
 }
 
 .innerBlock2 {
