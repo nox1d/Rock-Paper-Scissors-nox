@@ -38,7 +38,6 @@ p.value {
 #buttons button {
     width: 220px;
     height: 210px;
-    background-color: lightseagreen;
     border-radius: 16px;
     outline: 2px solid;
     border: none;
@@ -48,6 +47,15 @@ p.value {
 
 button#paper {
     margin: 20px 0;
+    background-color: #eff7f6;
+}
+
+button#rock {
+    background-color: #b2f7ef;
+}
+
+button#scissors {
+    background-color: #f7d6e0;
 }
 
 #buttons button:hover{
